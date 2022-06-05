@@ -5,7 +5,7 @@ function abcd1(_0x17164c) {
 }
 //var rndnum = "1862457550.55374328";
 //var starttime = "2021/1/26 13:01:53";
-//var activityId = '104530885';
+//var activityId = '104530885';  注意！
 function abcd2(_0x1b1e02, _0x23f273) {
     var _0x1f9ba1 = 2147483648;
     var _0x3b83ae = 2147483647;
