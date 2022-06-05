@@ -444,17 +444,17 @@ def main():
         raise '请新建一个config.txt文件！'
 
 
-main()
+#main()
 
-# if __name__ == "__main__":
-#     print("⏲ 请输入定时时间（默认每天6:05、12:05）")
-#     #minute = input("\tminute: ") or 5
-#     scheduler = BlockingScheduler(timezone='Asia/Shanghai')
-#     scheduler.add_job(main, 'cron', hour='6,12', minute='5')  # args=['20212091', 'Wenjing916'],  这里使用的是个人账号
-#     print('⏰ 已启动定时程序，每天 6,12点%02d 为您打卡' % (int(5)))
-#     print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C'))
-#     os.system('cls')  # TODO 这里我加入了一个清空命令
-#     try:
-#         scheduler.start()
-#     except (KeyboardInterrupt, SystemExit):
-#         pass
+if __name__ == "__main__":
+    print("⏲ 请输入定时时间（默认每天6:05、12:05）")
+    #minute = input("\tminute: ") or 5
+    scheduler = BlockingScheduler(timezone='Asia/Shanghai')
+    scheduler.add_job(main, 'cron', hour='6,12', minute='5')  # args=[''],  这里使用的是个人账号  
+    print('⏰ 已启动定时程序，每天 6,12点%02d 为您打卡' % (int(5)))
+    print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C'))
+    os.system('cls')  # TODO 这里我加入了一个清空命令
+    try:
+        scheduler.start()
+    except (KeyboardInterrupt, SystemExit):
+        pass
