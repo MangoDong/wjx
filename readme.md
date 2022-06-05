@@ -2,3 +2,6 @@
 
 
 可用于大量的体温打卡项目，设置了并发，多线程。
+
+
+activityId = int(activityId) ^ 2130030173  # 有一个位运算符^   activityId=activityId^ 2130030173   这段没写进问卷星的param 的生成方式中。
